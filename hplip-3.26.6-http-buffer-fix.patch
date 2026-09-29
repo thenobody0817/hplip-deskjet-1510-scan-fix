@@ -1,0 +1,12 @@
+diff --git a/scan/sane/http.c b/scan/sane/http.c
+index 1234567..abcdefg 100644
+--- a/scan/sane/http.c
++++ b/scan/sane/http.c
+@@ -480,7 +480,6 @@ static int http_read(int fd, char *buf, int size, int *bytes_read, int max_size)
+             if(ret)
+             {
+                 *bytes_read += len;
+-                *bytes_read += len;
+                 if(*bytes_read + len > max_size)
+                 {
+                     BUG("http_read: response exceeds buffer (read=%d len=%d max=%d)\n",
